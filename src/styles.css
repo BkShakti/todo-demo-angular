@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+ --clr-primary: rgb(54, 112, 199);
+ --clr-light: #CEE8F6;
+ --clr-dark: #333;
+ --clr-warning: rgb(99, 36, 36);
+ --btn:#3A7BD5
+}
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color: var(--clr-primary);
+ /* display: flex;
+ justify-content: center; */
+}

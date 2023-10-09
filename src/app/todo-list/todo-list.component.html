@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Todo List</h2>
+  <input
+    type="text"
+    [(ngModel)]="newTodo"
+    (keyup.enter)="addTodo()"
+    placeholder="Add New Task "
+  />
+  <ul>
+    <li *ngFor="let todo of todos">
+      <div class="inp">
+        <input type="checkbox" [(ngModel)]="todo.completed" />
+        <span
+          [ngStyle]="{
+            'text-decoration': todo.completed ? 'line-through' : 'none'
+          }"
+          >{{ todo.title }}</span
+        >
+      </div>
+      <button (click)="deleteTodo(todo)">Delete</button>
+    </li>
+  </ul>
+</div>

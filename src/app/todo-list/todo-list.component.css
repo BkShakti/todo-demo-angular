@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+.container {
+ width: 500px;
+ min-width: 400px;
+ margin: 10px auto;
+ padding: 20px;
+ border-radius: 5px;
+ background-color: var(--clr-light);
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+ font-size: 34px;
+ margin-bottom: 15px;
+ text-align: center;
+ font-weight: 900;
+}
+
+input[type="text"] {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: none;
+ background-color: transparent;
+ border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+ outline: none;
+ font-size: 1rem;
+
+}
+ 
+input[type="text"]::placeholder{
+  opacity: 0.4;
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+ul{
+  width: 100%;
+  position: relative;
+}
+li {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border: 1px solid #ccc; 
+  border-radius: 3px;
+ padding: 10px;
+ margin: 10px 0; 
+  background-color: #f9f9f9; 
+}
+
+ li input[type="checkbox"] {
+ margin-right: 10px;
+ cursor: pointer;
+}
+
+button {
+ background-color: #ff0000;
+ color: #fff;
+ border: none;
+ border-radius: 3px;
+ padding: 5px 10px;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: #cc0000;
+}
+
+.completed {
+ background-color: #f0f0f0; 
+ text-decoration: line-through; 
+}  
